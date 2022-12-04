@@ -1,0 +1,25 @@
+{
+  "name": "nx-monorepo-templates",
+  "packageManager": "yarn@3.2.4",
+  "workspaces": [
+    "packages/**/*",
+    "services/**/*"
+  ],
+  "scripts": {
+    "new-package": "hygen packages new && yarn",
+    "new-react-package": "hygen packages new-react && yarn"
+  },
+  "devDependencies": {
+    "@nrwl/nx-cloud": "^15.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.29.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "hygen": "^6.2.11",
+    "nx": "^15.2.4",
+    "prettier": "^2.8.0",
+    "typescript": "^4.9.3"
+  }
+}
