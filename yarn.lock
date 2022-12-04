@@ -5,6 +5,24 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@emotion-styled-system/root@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@emotion-styled-system/root@workspace:."
+  dependencies:
+    "@nrwl/nx-cloud": ^15.0.2
+    "@typescript-eslint/eslint-plugin": ^5.45.0
+    "@typescript-eslint/parser": ^5.45.0
+    eslint: ^8.29.0
+    eslint-plugin-import: ^2.26.0
+    eslint-plugin-prettier: ^4.2.1
+    eslint-plugin-unused-imports: ^2.0.0
+    hygen: ^6.2.11
+    nx: ^15.2.4
+    prettier: ^2.8.0
+    typescript: ^4.9.3
+  languageName: unknown
+  linkType: soft
+
 "@eslint/eslintrc@npm:^1.3.3":
   version: 1.3.3
   resolution: "@eslint/eslintrc@npm:1.3.3"
@@ -2712,24 +2730,6 @@ __metadata:
   checksum: ae238cd264a1c3f22091cdd9e2b106f684297d3c184f1146984ecbe18aaa86343953f26b9520dedd1b1372bc0316905b736c1932d778dbeb1fcf5a1001390e2a
   languageName: node
   linkType: hard
-
-"nx-monorepo-templates@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "nx-monorepo-templates@workspace:."
-  dependencies:
-    "@nrwl/nx-cloud": ^15.0.2
-    "@typescript-eslint/eslint-plugin": ^5.45.0
-    "@typescript-eslint/parser": ^5.45.0
-    eslint: ^8.29.0
-    eslint-plugin-import: ^2.26.0
-    eslint-plugin-prettier: ^4.2.1
-    eslint-plugin-unused-imports: ^2.0.0
-    hygen: ^6.2.11
-    nx: ^15.2.4
-    prettier: ^2.8.0
-    typescript: ^4.9.3
-  languageName: unknown
-  linkType: soft
 
 "nx@npm:15.2.4, nx@npm:^15.2.4":
   version: 15.2.4

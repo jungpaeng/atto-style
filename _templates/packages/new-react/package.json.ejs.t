@@ -3,7 +3,7 @@ to: packages/<%= name %>/package.json
 ---
 
 {
-  "name": "nx-monorepo-templates/<%= name %>",
+  "name": "@emotion-styled-system/<%= name %>",
   "description": "<%= description %>",
   "version": "0.0.0",
   "exports": {
