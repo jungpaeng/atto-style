@@ -8,6 +8,6 @@ to: packages/<%= name %>/tsconfig.lib.json
     "types": ["node"]
   },
   "files": [],
-  "exclude": ["**/*.spec.ts"],
+  "exclude": ["**/*.spec.ts", "**/*.test.ts"],
   "include": ["**/*.js", "**/*.ts"]
 }

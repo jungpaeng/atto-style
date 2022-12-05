@@ -25,6 +25,7 @@ to: packages/<%= name %>/package.json
     "build:bundle:js": "node ./esbuild.config.js"
   },
   "devDependencies": {
+    "@types/jest": "^29.2.4",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "concurrently": "^7.5.0",
     "dts-bundle-generator": "^7.0.0",
@@ -33,5 +34,7 @@ to: packages/<%= name %>/package.json
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-unused-imports": "^2.0.0"
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3"
   }
 }
