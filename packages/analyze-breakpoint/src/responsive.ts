@@ -1,3 +1,4 @@
+import { getLastItem } from './utils/getLastItem';
 import { isObject } from './utils/isObject';
 
 export const breakpoints = Object.freeze(['base', 'sm', 'md', 'lg', 'xl', '2xl']);
@@ -23,7 +24,7 @@ export function mapResponsive<Value extends string | number>(
 export function objectToArrayNotation(value: Record<string, string | number>, bps = breakpoints) {
   const result = bps.map((br) => value[br] ?? null);
 
-  while (result[result.length - 1] === null) result.pop();
+  while (getLastItem(result) === null) result.pop();
   return result;
 }
 
