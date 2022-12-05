@@ -1,4 +1,4 @@
-import { arrayToObjectNotation, mapResponsive, objectToArrayNotation } from './responsive';
+import { arrayToObjectNotation, isResponsiveObjectLike, mapResponsive, objectToArrayNotation } from './responsive';
 
 describe('mapResponsive', function () {
   const mapper = (val: number) => `grid-template-columns(${val}fr, 1fr)`;
@@ -41,5 +41,16 @@ describe('arrayToObjectNotation', function () {
     expect(arrayToObjectNotation([100, null, 400, null, 1700])).toStrictEqual({ base: 100, md: 400, xl: 1700 });
     expect(arrayToObjectNotation([null, 100])).toStrictEqual({ sm: 100 });
     expect(arrayToObjectNotation([null, null, 100])).toStrictEqual({ md: 100 });
+  });
+});
+
+describe('isResponsiveObjectLike', function () {
+  it('should be return true if object is responsive-like', function () {
+    expect(isResponsiveObjectLike({})).toBe(false);
+    expect(isResponsiveObjectLike({ margin: 10 })).toBe(false);
+    expect(isResponsiveObjectLike({ padding: 10 })).toBe(false);
+    expect(isResponsiveObjectLike({ base: 100 })).toBe(true);
+    expect(isResponsiveObjectLike({ base: 100, sm: 200 })).toBe(true);
+    expect(isResponsiveObjectLike({ base: 100, md: 400 })).toBe(true);
   });
 });

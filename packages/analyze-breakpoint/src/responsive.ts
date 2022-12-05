@@ -39,4 +39,5 @@ export function arrayToObjectNotation(values: Array<string | number | null>, bps
 
 export function isResponsiveObjectLike(value: Record<string, string | number>, bps = breakpoints) {
   const keys = Object.keys(value);
+  return keys.length > 0 && keys.every((item) => bps.includes(item));
 }
