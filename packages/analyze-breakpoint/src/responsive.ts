@@ -1,5 +1,7 @@
 import { isObject } from './utils/isObject';
 
+export const breakpoints = Object.freeze(['base', 'sm', 'md', 'lg', 'xl', '2xl']);
+
 export function mapResponsive<Value extends string | number>(
   prop: Value | Value[] | Record<string, Value>,
   mapper: (value: Value) => string
@@ -16,4 +18,25 @@ export function mapResponsive<Value extends string | number>(
   }
 
   return prop == null ? null : mapper(prop);
+}
+
+export function objectToArrayNotation(value: Record<string, string | number>, bps = breakpoints) {
+  const result = bps.map((br) => value[br] ?? null);
+
+  while (result[result.length - 1] === null) result.pop();
+  return result;
+}
+
+export function arrayToObjectNotation(values: Array<string | number | null>, bps = breakpoints) {
+  const result: Record<string, string | number> = {};
+  values.forEach((value, idx) => {
+    const key = bps[idx];
+    if (value != null) result[key] = value;
+  });
+
+  return result;
+}
+
+export function isResponsiveObjectLike(value: Record<string, string | number>, bps = breakpoints) {
+  const keys = Object.keys(value);
 }
