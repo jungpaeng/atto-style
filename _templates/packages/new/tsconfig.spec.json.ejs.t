@@ -8,6 +8,6 @@ to: packages/<%= name %>/tsconfig.spec.json
     "module": "commonjs",
     "types": ["jest", "node"]
   },
-  "include": ["**/*.spec.ts", "**/*.spec.js", "**/*.d.ts"],
+  "include": ["**/*.spec.ts", "**/*.test.ts", "**/*.d.ts"],
   "files": []
 }
