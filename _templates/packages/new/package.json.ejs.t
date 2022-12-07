@@ -33,7 +33,7 @@ to: packages/<%= name %>/package.json
     "esbuild-node-externals": "^1.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-unused-imports": "^2.0.0"
+    "eslint-plugin-unused-imports": "^2.0.0",
     "jest": "^29.3.1",
     "ts-jest": "^29.0.3"
   }
