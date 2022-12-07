@@ -22,6 +22,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "@emotion-styled-system/atomic-emotion",\
         "reference": "workspace:packages/atomic-emotion"\
+      },\
+      {\
+        "name": "@emotion-styled-system/hash-key",\
+        "reference": "workspace:packages/hash-key"\
       }\
     ],\
     "enableTopLevelFallback": true,\
@@ -29,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [\
       ["@emotion-styled-system/analyze-breakpoint", ["workspace:packages/analyze-breakpoint"]],\
       ["@emotion-styled-system/atomic-emotion", ["workspace:packages/atomic-emotion"]],\
+      ["@emotion-styled-system/hash-key", ["workspace:packages/hash-key"]],\
       ["@emotion-styled-system/root", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -859,6 +864,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/atomic-emotion/",\
           "packageDependencies": [\
             ["@emotion-styled-system/atomic-emotion", "workspace:packages/atomic-emotion"],\
+            ["@types/jest", "npm:29.2.4"],\
+            ["@typescript-eslint/eslint-plugin", "virtual:23bb24f2e48d1cf0b77e427855d1de86802c7fba8425cc8d4dcd25fba4b0189580c3f1ea8c89fb7539549a355efabf768e59a65c356712cbc6cc50060233a1cb#npm:5.45.0"],\
+            ["concurrently", "npm:7.6.0"],\
+            ["dts-bundle-generator", "npm:7.1.0"],\
+            ["esbuild", "npm:0.15.18"],\
+            ["esbuild-node-externals", "virtual:23bb24f2e48d1cf0b77e427855d1de86802c7fba8425cc8d4dcd25fba4b0189580c3f1ea8c89fb7539549a355efabf768e59a65c356712cbc6cc50060233a1cb#npm:1.5.0"],\
+            ["eslint-plugin-import", "virtual:23bb24f2e48d1cf0b77e427855d1de86802c7fba8425cc8d4dcd25fba4b0189580c3f1ea8c89fb7539549a355efabf768e59a65c356712cbc6cc50060233a1cb#npm:2.26.0"],\
+            ["eslint-plugin-prettier", "virtual:23bb24f2e48d1cf0b77e427855d1de86802c7fba8425cc8d4dcd25fba4b0189580c3f1ea8c89fb7539549a355efabf768e59a65c356712cbc6cc50060233a1cb#npm:4.2.1"],\
+            ["eslint-plugin-unused-imports", "virtual:23bb24f2e48d1cf0b77e427855d1de86802c7fba8425cc8d4dcd25fba4b0189580c3f1ea8c89fb7539549a355efabf768e59a65c356712cbc6cc50060233a1cb#npm:2.0.0"],\
+            ["jest", "virtual:23bb24f2e48d1cf0b77e427855d1de86802c7fba8425cc8d4dcd25fba4b0189580c3f1ea8c89fb7539549a355efabf768e59a65c356712cbc6cc50060233a1cb#npm:29.3.1"],\
+            ["ts-jest", "virtual:23bb24f2e48d1cf0b77e427855d1de86802c7fba8425cc8d4dcd25fba4b0189580c3f1ea8c89fb7539549a355efabf768e59a65c356712cbc6cc50060233a1cb#npm:29.0.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@emotion-styled-system/hash-key", [\
+        ["workspace:packages/hash-key", {\
+          "packageLocation": "./packages/hash-key/",\
+          "packageDependencies": [\
+            ["@emotion-styled-system/hash-key", "workspace:packages/hash-key"],\
             ["@types/jest", "npm:29.2.4"],\
             ["@typescript-eslint/eslint-plugin", "virtual:23bb24f2e48d1cf0b77e427855d1de86802c7fba8425cc8d4dcd25fba4b0189580c3f1ea8c89fb7539549a355efabf768e59a65c356712cbc6cc50060233a1cb#npm:5.45.0"],\
             ["concurrently", "npm:7.6.0"],\
