@@ -1,1 +1,1 @@
-# emotion-styled-system
+# stylesheet-system
