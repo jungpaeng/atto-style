@@ -1,5 +1,5 @@
 {
-  "name": "@stylesheet-system/sheet",
+  "name": "@atto-style/sheet",
   "description": "StyleSheet for css in js",
   "version": "0.0.0",
   "exports": {
