@@ -20,8 +20,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/analyze-breakpoint"\
       },\
       {\
-        "name": "@stylesheet-system/atomic-emotion",\
-        "reference": "workspace:packages/atomic-emotion"\
+        "name": "@stylesheet-system/atomic-css",\
+        "reference": "workspace:packages/atomic-css"\
       },\
       {\
         "name": "@stylesheet-system/hash-key",\
@@ -32,7 +32,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["@stylesheet-system/analyze-breakpoint", ["workspace:packages/analyze-breakpoint"]],\
-      ["@stylesheet-system/atomic-emotion", ["workspace:packages/atomic-emotion"]],\
+      ["@stylesheet-system/atomic-css", ["workspace:packages/atomic-css"]],\
       ["@stylesheet-system/hash-key", ["workspace:packages/hash-key"]],\
       ["@stylesheet-system/root", ["workspace:."]]\
     ],\
@@ -1407,11 +1407,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT"\
         }]\
       ]],\
-      ["@stylesheet-system/atomic-emotion", [\
-        ["workspace:packages/atomic-emotion", {\
-          "packageLocation": "./packages/atomic-emotion/",\
+      ["@stylesheet-system/atomic-css", [\
+        ["workspace:packages/atomic-css", {\
+          "packageLocation": "./packages/atomic-css/",\
           "packageDependencies": [\
-            ["@stylesheet-system/atomic-emotion", "workspace:packages/atomic-emotion"],\
+            ["@stylesheet-system/atomic-css", "workspace:packages/atomic-css"],\
             ["@types/jest", "npm:29.2.4"],\
             ["@typescript-eslint/eslint-plugin", "virtual:9e7e4fde57bc6e6bd2efd23ecef526652955aa988f68af6079ef921a8e63e4a1f46d9201f81dca77e0be94335af69f7d7c145f652731ece9f60fc8708ad94a87#npm:5.45.0"],\
             ["concurrently", "npm:7.6.0"],\

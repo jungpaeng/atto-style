@@ -912,9 +912,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@stylesheet-system/atomic-emotion@workspace:packages/atomic-emotion":
+"@stylesheet-system/atomic-css@workspace:packages/atomic-css":
   version: 0.0.0-use.local
-  resolution: "@stylesheet-system/atomic-emotion@workspace:packages/atomic-emotion"
+  resolution: "@stylesheet-system/atomic-css@workspace:packages/atomic-css"
   dependencies:
     "@types/jest": ^29.2.4
     "@typescript-eslint/eslint-plugin": ^5.40.1
